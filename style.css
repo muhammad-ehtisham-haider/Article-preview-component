@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  hsl(210, 46%, 95%)   ;
+}
+@media only screen and (max-width:1440px) {
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        color:  hsl(214, 17%, 51%);
+    }
+    h2,h5{
+        color: hsl(217, 19%, 35%);
+        font-family: 'Manrope', sans-serif;
+    }
+    .container{
+        display: flex;
+        margin-top: 150px;
+        height: 280px;
+        max-width: 800px;
+    }
+    .image-section{
+        width: 600px;
+        height: 100%;
+    }
+    .image-section img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    .text-section{
+        background-color:white ;
+        padding: 30px;
+        border-radius: 0 10px 10px 0;
+    }
+    p{
+        margin-top: 10px;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    footer .left{
+        display: flex;
+    }
+    picture{
+        width: 40px;
+        height: 40px;
+        background-color: blueviolet;
+        border-radius: 50%;
+        outline: none;
+    }
+    picture img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        outline: none;
+    }
+    footer .text{
+        margin-left: 15px;
+    }
+    .text p{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .click{
+        height: 30px;
+        width: 30px;
+        background-color: hsl(210, 46%, 95%) ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        margin-left: 145px;
+    }
+    .click:hover{
+        background-color:hsl(217, 19%, 35%);
+        cursor: pointer;
+    }
+    .click img{
+        height: 15px;
+        width: 15px;
+    }
+    .click img:hover{
+        filter: sepia(100%);
+    }
+    .show{
+        height: 75px;
+        color: aliceblue;
+        width: 180px;
+        background-color: hsl(217, 19%, 35%);
+        display: flex;
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 65% 75%, 54% 100%, 42% 75%, 0 75%);
+        border-radius: 10px;
+        margin-top: -82px;
+        position: absolute;
+         margin-left: 62px; 
+        visibility: hidden;
+       
+    }
+    .show .image-one{
+        margin-top: 8px;
+        margin-left: 20px;
+    }
+    .image-one img{
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+    .text-one p{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .mob{
+        background-color: hsl(210, 46%, 95%);
+        height: 30px;
+        width: 30px;
+        /* background-color: hsl(210, 46%, 95%) ; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        display: none;
+    }
+    .mob:hover{
+        background-color:hsl(217, 19%, 35%);
+        cursor: pointer;
+    }
+    .mob img{
+        margin-top: -2px;
+        height: 15px;
+        width: 15px;
+    }
+    
+}
+
+
+@media screen and (max-width:500px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .image-section img{
+        border-radius: 10px 10px 0 0;
+        margin-left: 100px;
+        max-width: 400px;
+    }
+    .text-section{
+        max-width: 400px;
+        margin-left: 100px;
+        border-radius: 0 0 10px 10px;
+    }
+    .show{
+        margin-left: -195px;
+        margin-top: 2px;
+        width: 400px;
+        clip-path: none;
+        border-radius: 0 0 10px 10px;
+        height: 73px;
+        
+    }
+    .mob{
+        margin-left: 246px;
+        margin-top: -40px;
+        display: block;
+    }   
+    .mob img{
+        margin-top: 5px;
+        margin-left: 8px;
+    }
+    .mob:hover{
+        background-color: lightgray;
+    }
+
+}
